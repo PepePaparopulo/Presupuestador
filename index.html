@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Presupuestador Online FICUS</title>
+</head>
+<body>
+	<fieldset>
+		<header>Presupuestador online</header>
+	</fieldset>
+	<br>
+	<form action="php/presupuestador.php" method="get">
+	<div style="background-color:lightgrey; color:black; padding:20px;">
+		<label for="mail">E-mail</label>
+		<br>
+		<input name="mail" id="mail" type="text">
+		<br>
+		<label for="codigo">Codigo de descuento</label>
+		<br>
+		<input name="codigo" id="codigo" type="text">
+	</div>
+	<br>
+	<div style="background-color:lightgrey; color:black; padding:20px;">
+		<label for="negocio[]">Tipo de negocio</label>
+		<br>
+		<input name="negocio[]" value="Emprendimiento" type="radio"> Emprendimiento
+		<br>
+		<input name="negocio[]" value="Comercio" type="radio"> Comercio
+		<br>
+		<input name="negocio[]" value="Industria" type="radio"> Industria
+		<br>
+	</div>
+	<br>
+	<div style="background-color:lightgrey; color:black; padding:20px;">
+		<label for="servicio[]">Servicio</label>
+		<br>
+		<input name="servicio[]" value="Pagina basica" type="checkbox"> Pagina Basica
+		<br>
+		<input name="servicio[]" value="Web completa" type="checkbox"> Web completa
+		<br>
+		<input name="servicio[]" value="Aplicacion movil" type="checkbox"> Aplicacion movil
+		<br>
+		<input name="servicio[]" value="Sistema" type="checkbox"> Sistema
+		<br>
+		<input name="servicio[]" value="Actualizacion de sistema" type="checkbox"> Actualizacion de sistema
+		<br>
+		<input name="servicio[]" value="e-commerce" type="checkbox"> e-commerce
+		<br>		
+	</div>
+	<br>
+	<br>
+	<div style="background-color:lightgrey; color:black; padding:20px;">
+		<label for="reqDes[]">Requerimientos de Desarrollo</label>
+		<br>
+		<input name="reqDes[]" value="Diseño de identidad" type="checkbox"> Diseño de identidad
+		<br>
+		<input name="reqDes[]" value="Generar contenido" type="checkbox"> Generar contenido
+		<br>
+		<input name="reqDes[]" value="Estudio de usabilidad - UX" type="checkbox"> Estudio de usabilidad - UX
+		<br>
+		<input name="reqDes[]" value="Tecnologia especifica" type="checkbox"> Tecnologia especifica
+		<br>
+		<input name="reqDes[]" value="Seguridad" type="checkbox"> Seguridad
+		<br>	
+	</div>
+	<br>
+	<div style="background-color:lightgrey; color:black; padding:20px;">
+		<label for="reqeb">Requerimientos web</label>
+		<br>
+		<input name="reqWeb[]" value="Auto administrable" type="checkbox"> Auto administrable
+		<br>
+		<input name="reqWeb[]" value="Mas de un idioma" type="checkbox"> Mas de un idioma
+		<br>
+		<input name="reqWeb[]" value="Integracion en redes sociales" type="checkbox"> Integracion en redes sociales
+		<br>
+		<input name="reqWeb[]" value="Logueo para usuarios" type="checkbox"> Logueo para usuarios
+		<br>		
+	</div>
+	<br>
+	<div style="background-color:lightgrey; color:black; padding:20px;">
+		<label for="cantsr">Cantidad de usuarios</label>
+		<br>
+		<input name="cantUsr[]" value="Baja(menor a 10 diarios)" type="radio"> Baja(menor a 10 diarios)
+		<br>
+		<input name="cantUsr[]" value="Media(50 diarios)" type="radio"> Media(50 diarios)
+		<br>
+		<input name="cantUsr[]" value="Alta(100 diarios)" type="radio"> Alta(100 diarios)
+		<br>
+		<input name="cantUsr[]" value="Muy alta(mas de 100 diarios)" type="radio"> Muy alta(mas de 100 diarios)
+		<br>
+		<input name="cantUsr[]" value="No lo se" type="radio"> No lo se	
+	</div>
+	<br>
+	<br>
+	<div style="background-color:lightgrey; color:black; padding:20px;">
+		<label for="pago">Modelo de pago</label>
+		<br>
+		<input name="pago[]" value="Pago unico" type="radio"> Pago unico
+		<br>
+		<input name="pago[]" value="Pago en cuotas" type="radio"> Pago en cuotas
+		<br>
+		<input name="pago[]" value="Monto fijo mensual" type="radio"> Monto fijo mensual
+		<br>
+		<input name="pago[]" value="Presupuesto a medida" type="radio"> Presupuesto a medida
+		<br>		
+	</div>
+	<br>
+	<div style="background-color:lightgrey; color:black; padding:20px;">
+		<input name="calcular" value="Calcular" type="submit">		
+	</div>	
+	<br>
+	</form>
+	<form action="php/cotizacion.php" method="get">
+		<div style="background-color:lightgrey; color:black; padding:20px;">
+			<label for = 'cotizacion'>buscar cotizacion</label>
+			<input name="cotizacion"  type="text">
+			<br>				
+		</div>
+		<div style="background-color:lightgrey; color:black; padding:20px;">
+			<input name="Buscar" value="Buscar" type="submit">		
+		</div>
+	</form>
+</body>
+</html>
